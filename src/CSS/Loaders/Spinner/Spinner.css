@@ -1,0 +1,48 @@
+.DG-Spinner{
+  width: 20px;
+  height: 20px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: block;
+ }
+
+ /* Spinner white Background */
+.DG-Spinner-WB{
+  height: 20px;
+  width: 20px;
+  border: 4px solid white;
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: block;
+ }
+
+
+ /* Spinner Black Background */
+.DG-Spinner-BB{
+  height: 20px;
+  width: 20px;
+  border: 4px solid black;
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: block;
+ }
+
+ @keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+ 
+ 

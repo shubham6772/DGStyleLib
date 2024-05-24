@@ -1,0 +1,92 @@
+.DG-Three-Spinner {
+    width: 80px; /* Total width */
+    height: 80px; /* Total height */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DG-circle { 
+    border-radius: 50%;
+    position: absolute;
+}
+
+.DG-circle:nth-child(1) {
+    width: 10px; /* Adjust as needed */
+    height: 10px; /* Adjust as needed */
+    border: 3px solid white;
+    border-top-color: red;
+    /* border-left-color: red; */
+    animation: spin 1s linear infinite;
+}
+
+.DG-circle:nth-child(2) {
+    width: 20px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    border: 3px solid white;
+    border-top-color: blue;
+    /* border-left-color: blue; */
+    animation: spin 2s linear infinite reverse;
+}
+
+.DG-circle:nth-child(3) {
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    border: 3px solid white;
+    border-top-color: green;
+    /* border-left-color: green; */
+    animation: spin 3s linear infinite;
+}
+
+
+/* DG Black Background */
+
+.DG-Three-Spinner-BB {
+    width: 80px; /* Total width */
+    height: 80px; /* Total height */
+    position: relative;
+    display: flex;
+    background-color: #333;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.DG-circle-BB { 
+    border-radius: 50%;
+    position: absolute;
+}
+
+.DG-circle-BB:nth-child(1) {
+    width: 20px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    border: 3px solid #333;
+    border-top-color: red;
+    border-left-color: red;
+    animation: spin 1s linear infinite;
+}
+
+.DG-circle-BB:nth-child(2) {
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    border: 3px solid #333;
+    border-top-color: blue;
+    border-left-color: blue;
+    animation: spin 2s linear infinite reverse;
+}
+
+.DG-circle-BB:nth-child(3) {
+    width: 60px; /* Adjust as needed */
+    height: 60px; /* Adjust as needed */
+    border: 3px solid #333;
+    border-top-color: green;
+    border-left-color: green;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

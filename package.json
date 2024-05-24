@@ -1,0 +1,21 @@
+{
+  "name": "css-lib-sdk-v1",
+  "version": "1.0.0",
+  "description": "css library",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --config webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.js --mode production"
+  },
+  "author": "codeguru",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^7.1.1",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
