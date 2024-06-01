@@ -1,9 +1,9 @@
-import { Helper } from "../Helper";
-import { KeyMapper } from "../KeyMapper";
+import { Helper } from "../../Helper";
+import { KeyMapper } from "../../KeyMapper";
 
 export class ThreeSpinner {
 
-    static classArray = [KeyMapper.DG_ThreeSpinner, KeyMapper.DG_TS_1, KeyMapper.DG_TS_2, KeyMapper.DG_TS_3, KeyMapper.DG_ThreeSpinner_BB, KeyMapper.DG_TS_1_BB, KeyMapper.DG_TS_2_BB, KeyMapper.DG_TS_3_BB]
+    private classArray = [KeyMapper.DG_ThreeSpinner, KeyMapper.DG_TS_1, KeyMapper.DG_TS_2, KeyMapper.DG_TS_3, KeyMapper.DG_ThreeSpinner_BB, KeyMapper.DG_TS_1_BB, KeyMapper.DG_TS_2_BB, KeyMapper.DG_TS_3_BB]
     static classUsed: any = "";
 
     private checkMethod(elmId: any) {
@@ -17,8 +17,9 @@ export class ThreeSpinner {
             if (!container) {
                 console.log("Element not found in DOM");
             } else {
-                let { elm, className } = Helper.containClass(elmId, ThreeSpinner.classArray);
-                ThreeSpinner.classUsed = className;
+                let tspinner = new ThreeSpinner();
+                let { elm, classUsed } = Helper.containClass(elmId, tspinner.classArray);
+                ThreeSpinner.classUsed = classUsed;
                 if (!elm) {
                     return false
                 } else {

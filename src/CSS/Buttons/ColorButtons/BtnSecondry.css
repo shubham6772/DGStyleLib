@@ -1,0 +1,28 @@
+.DG-CB-secondry {
+    background-color: #4cb6d1; /* Green background */
+    border: none;              /* Remove default border */
+    color: white;              /* White text */
+    padding: 15px 32px;        /* Padding for button */
+    text-align: center;        /* Center the text */
+    text-decoration: none;     /* Remove underline */
+    display: inline-block;     /* Inline-block element */
+    font-size: 14px;           /* Font size */
+    margin: 4px 2px;           /* Margin around button */
+    cursor: pointer;            /* Pointer cursor on hover */
+    border-radius: 8px;        /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+}
+  
+  /* Hover Effect */
+.DG-CB-secondry:hover {
+    background-color: #32a0bb; /* Darker green on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Larger shadow */
+}
+  
+  /* Active Effect */
+.DG-CB-secondry:active {
+    background-color: #1e93b1; /* Even darker green when pressed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow */
+    transform: scale(0.97); /* Slight movement to simulate press */
+}

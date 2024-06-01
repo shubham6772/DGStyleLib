@@ -1,0 +1,28 @@
+.DG-CB-danger {
+    background-color: #e43d3d; /* Green background */
+    border: none;              /* Remove default border */
+    color: white;              /* White text */
+    padding: 15px 32px;        /* Padding for button */
+    text-align: center;        /* Center the text */
+    text-decoration: none;     /* Remove underline */
+    display: inline-block;     /* Inline-block element */
+    font-size: 14px;          /* Font size */
+    margin: 4px 2px;           /* Margin around button */
+    cursor: pointer;            /* Pointer cursor on hover */
+    border-radius: 8px;        /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+}
+  
+  /* Hover Effect */
+.DG-CB-danger:hover {
+    background-color: #ce2b2b; /* Darker green on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Larger shadow */
+}
+  
+  /* Active Effect */
+.DG-CB-danger:active {
+    background-color: #bb1e1e; /* Even darker green when pressed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow */
+    transform: scale(0.97); /* Slight movement to simulate press */
+}

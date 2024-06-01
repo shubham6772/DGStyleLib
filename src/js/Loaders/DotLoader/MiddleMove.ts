@@ -1,9 +1,9 @@
-import { Helper } from "../Helper";
-import { KeyMapper } from "../KeyMapper";
+import { Helper } from "../../Helper";
+import { KeyMapper } from "../../KeyMapper";
 
 export class MiddleMove{
 
-    static classArray = [KeyMapper.DG_MiddleMoveLoader, KeyMapper.DG_MiddleMoveLoader_BB, KeyMapper.DG_MiddleMoveLoader_WB];
+    private classArray = [KeyMapper.DG_MiddleMoveLoader, KeyMapper.DG_MiddleMoveLoader_BB, KeyMapper.DG_MiddleMoveLoader_WB];
 
     private checkMethod(elmId: any) {
         try {
@@ -16,7 +16,8 @@ export class MiddleMove{
             if (!container) {
                 console.log("Element not found in DOM");
             } else {
-                let {elm} = Helper.containClass(elmId, MiddleMove.classArray);
+                let mmObj = new MiddleMove()
+                let {elm} = Helper.containClass(elmId, mmObj.classArray);
                 if(!elm){
                    return false
                 }else{

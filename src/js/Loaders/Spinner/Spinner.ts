@@ -1,9 +1,9 @@
-import { Helper } from "../Helper";
-import { KeyMapper } from "../KeyMapper";
+import { Helper } from "../../Helper";
+import { KeyMapper } from "../../KeyMapper";
 
 export class Spinner {
 
-    static classArray = [KeyMapper.DG_Spinner, KeyMapper.DG_Spinner_BB, KeyMapper.DG_Spinner_WB];
+    private classArray = [KeyMapper.DG_Spinner, KeyMapper.DG_Spinner_BB, KeyMapper.DG_Spinner_WB];
 
     private checkMethod(elmId: any) {
         try {
@@ -16,7 +16,8 @@ export class Spinner {
             if (!container) {
                 console.log("Element not found in DOM");
             } else {
-                let {elm} = Helper.containClass(elmId, Spinner.classArray);
+                let spinObj = new Spinner();
+                let {elm} = Helper.containClass(elmId, spinObj.classArray);
                 if(!elm){
                    return false
                 }else{

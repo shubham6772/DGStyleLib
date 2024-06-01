@@ -26,6 +26,13 @@ export const KeyMapper = {
     DG_MiddleMoveLoader_BB : "DG-MiddleMoveLoader-BB",
     DG_MiddleMoveLoader_WB : "DG-MiddleMoveLoader-WB",
 
+    // ColorButtons Classes (Buttons/ColorButtons.....)
+
+    DG_CB_BtnPrimary : "DG-CB-primary",
+    DG_CB_BtnSecondry : "DG-CB-secondry",
+    DG_CB_BtnDanger : "DG-CB-danger",
+    DG_CB_BtnSuccess : "DG-CB-success",
+
     Class : "class",
     ID : "id",
     
