@@ -15,15 +15,21 @@ import "./CSS/Buttons/ColorButtons/BtnSecondry.css"
 import "./CSS/Buttons/ColorButtons/BtnDanger.css"
 import "./CSS/Buttons/ColorButtons/BtnSuccess.css"
 
-// CSS Class Import Ends Here
+// Navbar Starts here
+import "./CSS/Navbar/Navbar.css"
+// Navbar End Here
 
+// CSS Class Import Ends Here
 
 //........................................................ JS Classes Imports..................................................................................................................................
 // Loaders
 import { Spinner, ThreeSpinner, BenSpinner, MiddleMove } from "./js/Loaders"
+
+// Color Buttons
 import {ColorButtons } from "./js/Buttons"
 
- 
+// Navbar
+import { Navbar } from "./js/Navbar/Navbar" 
 
 // JS Class Import Ends Here
 
@@ -32,7 +38,8 @@ var DGstyle = {
     ThreeSpinner,
     BenSpinner,
     MiddleMove, 
-    ColorButtons
+    ColorButtons,
+    Navbar,
 }
 
 window.DGstyle = DGstyle;
